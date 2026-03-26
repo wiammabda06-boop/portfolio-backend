@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Wiam Mabda — Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Noise overlay -->
+<div class="noise"></div>
+
+<!-- ══════════ NAV ══════════ -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">W<span>M</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="nav-mobile" id="navMobile">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div class="hero-orb orb-1"></div>
+  <div class="hero-orb orb-2"></div>
+  <div class="hero-grid-bg"></div>
+
+  <div class="hero-content">
+    <div class="hero-chip">
+      <span class="pulse-dot"></span>
+      Open to opportunities
+    </div>
+
+    <h1 class="hero-name">
+      <span class="name-line" style="--d:.15s">Wiam</span>
+      <span class="name-line accent-line" style="--d:.3s">Mabda</span>
+    </h1>
+
+    <div class="hero-title-row">
+      <span class="title-bar"></span>
+      <p class="hero-title">Full-Stack Developer</p>
+    </div>
+
+    <p class="hero-intro">
+      Second-year intern – Full-Stack Development at OFPPT, motivated
+
+to put my web development skills into practice
+Serious, curious, and able to work in a team.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-glow">
+        <i class="fa-solid fa-paper-plane"></i> Contact Me
+      </a>
+      <a href="#projects" class="btn btn-ghost">
+        <i class="fa-solid fa-folder-open"></i> View Projects
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <strong>2+</strong><span>Projects Built</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <strong>6+</strong><span>Technologies</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <strong>1</strong><span>Year Training</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about">
+  <div class="container">
+    <div class="section-tag">01 — About</div>
+    <h2 class="section-title">Who I <em>am</em></h2>
+
+    <div class="about-layout">
+      <div class="about-text reveal">
+        <p>My journey as a Full-Stack developer began with a simple curiosity: how do things really work?
+         Now, as a student at OFPPT, I channel that curiosity into building digital products that
+          are both visually polished and technically solid — from the frontend pixels to the backend logic.
+         I value structure, focus, and collaboration, and I’m constantly pushing myself to improve.
+          Whether learning a new framework or solving a real-world problem, I bring the same mindset: understand deeply, build cleanly, and keep growing.</p>
+        
+        <div class="trait-grid">
+          <div class="trait"><i class="fa-solid fa-bullseye"></i><span>Serious</span></div>
+          <div class="trait"><i class="fa-solid fa-users"></i><span>Team Player</span></div>
+          <div class="trait"><i class="fa-solid fa-bolt"></i><span>Fast Learner</span></div>
+          <div class="trait"><i class="fa-solid fa-list-check"></i><span>Organized</span></div>
+          <div class="trait"><i class="fa-solid fa-user-gear"></i><span>Autonomous</span></div>
+        </div>
+      </div>
+
+      <div class="about-cards reveal" style="--rd:.15s">
+        <div class="acard">
+          <div class="acard-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <h4>Education</h4>
+            <p>Specialized Technician in Digital Development — OFPPT</p>
+          </div>
+        </div>
+        <div class="acard">
+          <div class="acard-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <h4>Location</h4>
+            <p>Mediouna, Morocco</p>
+          </div>
+        </div>
+        <div class="acard">
+          <div class="acard-icon"><i class="fa-solid fa-code"></i></div>
+          <div>
+            <h4>Specialization</h4>
+            <p>Full-Stack Web Development</p>
+          </div>
+        </div>
+        <div class="acard">
+          <div class="acard-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <div>
+            <h4>Training Period</h4>
+            <p>2024 – 2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills" class="section-alt">
+  <div class="container">
+    <div class="section-tag">02 — Skills</div>
+    <h2 class="section-title">My <em>Toolkit</em></h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-panel reveal">
+        <div class="skill-panel-header">
+          <i class="fa-solid fa-paintbrush"></i>
+          <h3>Frontend</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row" data-pct="92">
+            <div class="sr-meta"><span>HTML5</span><span class="sr-pct">95%</span></div>
+            <div class="sr-bar"><div class="sr-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="88">
+            <div class="sr-meta"><span>CSS3</span><span class="sr-pct">88%</span></div>
+            <div class="sr-bar"><div class="sr-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="80">
+            <div class="sr-meta"><span>JavaScript</span><span class="sr-pct">60%</span></div>
+            <div class="sr-bar"><div class="sr-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="75">
+            <div class="sr-meta"><span>React</span><span class="sr-pct">80%</span></div>
+            <div class="sr-bar"><div class="sr-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="75">
+            <div class="sr-meta"><span>Bootstrap</span><span class="sr-pct">85%</span></div>
+            <div class="sr-bar"><div class="sr-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-panel reveal" style="--rd:.1s">
+        <div class="skill-panel-header">
+          <i class="fa-solid fa-server"></i>
+          <h3>Backend</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row" data-pct="78">
+            <div class="sr-meta"><span>PHP</span><span class="sr-pct">60%</span></div>
+            <div class="sr-bar"><div class="sr-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="72">
+            <div class="sr-meta"><span>Laravel</span><span class="sr-pct">79%</span></div>
+            <div class="sr-bar"><div class="sr-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="68">
+            <div class="sr-meta"><span>Node.js</span><span class="sr-pct">68%</span></div>
+            <div class="sr-bar"><div class="sr-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-panel reveal" style="--rd:.2s">
+        <div class="skill-panel-header">
+          <i class="fa-solid fa-database"></i>
+          <h3>Databases</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row" data-pct="82">
+            <div class="sr-meta"><span>MySQL</span><span class="sr-pct">60%</span></div>
+            <div class="sr-bar"><div class="sr-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="65">
+            <div class="sr-meta"><span>MongoDB</span><span class="sr-pct">95%</span></div>
+            <div class="sr-bar"><div class="sr-fill"></div></div>
+          </div>
+          <div class="skill-row" data-pct="65">
+            <div class="sr-meta"><span>NoSQL</span><span class="sr-pct">95%</span></div>
+            <div class="sr-bar"><div class="sr-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-panel reveal" style="--rd:.3s">
+        <div class="skill-panel-header">
+          <i class="fa-solid fa-wrench"></i>
+          <h3>Tools</h3>
+        </div>
+        <div class="tool-chips">
+          <span class="chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+          <span class="chip"><i class="fa-brands fa-gitlab"></i> GitLab</span>
+          <span class="chip"><i class="fa-solid fa-code"></i> VS Code</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">MVC</span>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="section-tag">03 — Projects</div>
+    <h2 class="section-title">Things I've <em>Built</em></h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="pc-banner pc-banner-1">
+          <div class="pc-icon"></div>
+          <div class="pc-number">01</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat">Real Estate Platform</div>
+          <h3>DarNow – Nabda</h3>
+          <p>A full-stack real estate platform for listing, searching and filtering properties. Built with a React frontend and PHP/MySQL backend, featuring a responsive UI and admin panel.</p>
+          <ul class="pc-features">
+            <li>Property listing & detail pages</li>
+            <li>Advanced search & filtering</li>
+            <li>Fully responsive UI</li>
+            <li>Admin panel for listings</li>
+          </ul>
+          <div class="pc-stack">
+            <span>React</span><span>PHP</span><span>MySQL</span><span>CSS3</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--rd:.2s">
+        <div class="pc-banner pc-banner-2">
+          <div class="pc-icon"></div>
+          <div class="pc-number">02</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat">Finance Tool</div>
+          <h3>Loan Simulation Platform</h3>
+          <p>A personal full-stack project that simulates loan repayment scenarios. Features a live loan calculator, user dashboard with history, and authentication system.</p>
+          <ul class="pc-features">
+            <li>Interactive loan simulator</li>
+            <li>User dashboard & history</li>
+            <li>Authentication & user management</li>
+            <li>Amortization schedule</li>
+          </ul>
+          <div class="pc-stack">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+        </div>
+      </article>
+      <article class="project-card reveal" style="--rd:.2s">
+        <div class="pc-banner pc-banner-2">
+          <div class="pc-icon"></div>
+          <div class="pc-number">03</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat">Projet full-stack</div>
+          <h3>Payment & Client Management App</h3>
+          <p>A full-stack web application built with Laravel, featuring role-based authentication, client management, and secure payment simulation</p>
+          <ul class="pc-features">
+            <li>MVC architecture with Laravel</li>
+            <li>Role-based auth (Client/Admin)</li>
+            <li>Payment simulation & address management</li>
+            <li>CSRF protection, policies & middleware</li>
+            <li>Admin dashboard with moderation tools</li>
+            <li>Optimized MySQL with Eloquent & soft deletes</li>
+            <li>Responsive UI with public & admin spaces</li>
+          </ul>
+          <div class="pc-stack">
+            <span>Laravel</span><span>Php</span><span>MySQL</span><span>Eloquent ORM</span><span>Blade</span><span>Bootstrap</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EXPERIENCE & EDUCATION ══════════ -->
+<section id="experience" class="section-alt">
+  <div class="container">
+    <div class="section-tag">04 — Background</div>
+    <h2 class="section-title">Experience & <em>Education</em></h2>
+
+    <div class="bg-grid">
+      <div class="bg-col reveal">
+        <h3 class="bg-col-title"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <h6 class="tl-date">Commerce and Marketing</h6>
+            <div class="tl-org">pre-professional experiences</div>
+            <p><ul>
+              <li>Produce marketing and promotional materials.</li>
+              <li>Create content that optimizes your website's SEO.</li>
+              <li>Monitoring and managing social media.</li>
+            </ul></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-col reveal" style="--rd:.2s">
+        <h3 class="bg-col-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            
+            <h6 class="tl-date">Specialized Technician — Digital Development</h6>
+            <div class="tl-org">Full Stack — OFPPT</div>
+            <p><ul>
+              <li>Year 1: Digital Development</li>
+              <li>Year 2: Full Stack (Final Project in progress)</li>
+            </ul></p>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <h6 class="tl-date">Baccalaureate in Physical Sciences</h6>
+            <div class="tl-org">High School Diploma</div>
+              <p><ul>
+              <li>Battouta High School – Physical Sciences Option</li>
+              <li>Year: 2024</li>
+            </ul> 
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ LANGUAGES ══════════ -->
+<section id="languages">
+  <div class="container">
+    <div class="section-tag">05 — Languages</div>
+    <h2 class="section-title">How I <em>Communicate</em></h2>
+
+    <div class="lang-row">
+      <div class="lang-card reveal">
+        <div class="lang-flag">🇲🇦</div>
+        <div class="lang-info">
+          <h4>Arabic</h4>
+          <span>Native</span>
+        </div>
+        <div class="lang-bar-wrap">
+          <div class="lang-bar" style="--lw:100%"></div>
+        </div>
+      </div>
+      <div class="lang-card reveal" style="--rd:.15s">
+        <div class="lang-flag">🇫🇷</div>
+        <div class="lang-info">
+          <h4>French</h4>
+          <span>Intermediate</span>
+        </div>
+        <div class="lang-bar-wrap">
+          <div class="lang-bar" style="--lw:60%"></div>
+        </div>
+      </div>
+      <div class="lang-card reveal" style="--rd:.3s">
+        <div class="lang-flag">🇬🇧</div>
+        <div class="lang-info">
+          <h4>English</h4>
+          <span>Technical</span>
+        </div>
+        <div class="lang-bar-wrap">
+          <div class="lang-bar" style="--lw:55%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact" class="section-alt">
+  <div class="container">
+    <div class="section-tag">06 — Contact</div>
+    <h2 class="section-title">Let's <em>Connect</em></h2>
+
+    <div class="contact-layout">
+
+      <div class="contact-left reveal">
+        <p class="contact-intro">I'm always open to new opportunities, collaborations, or just a friendly conversation about technology. Drop me a message!</p>
+        <div class="contact-links">
+          <a href="tel:0704716828" class="clink">
+            <div class="clink-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span>Phone</span>
+              <strong>0704716828</strong>
+            </div>
+          </a>
+          <a href="mailto:waim.mabda.2006@gmail.com" class="clink">
+            <div class="clink-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span>Email</span>
+              <strong>waim.mabda.2006@gmail.com</strong>
+            </div>
+          </a>
+          <div class="clink">
+            <div class="clink-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span>Location</span>
+              <strong>Mediouna, Morocco</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-right reveal" style="--rd:.2s">
+        <form id="contactForm" class="cform" novalidate>
+          <div class="cform-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="full name" required autocomplete="name"/>
+          </div>
+          <div class="cform-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"/>
+          </div>
+          <div class="cform-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-glow btn-full" id="submitBtn">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span id="btnText">Send Message</span>
+          </button>
+          <div id="formStatus" class="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="container footer-inner">
+    <p>© 2025 <span>Wiam Mabda</span> — Crafted with 💙 in Morocco</p>
+    <div class="footer-links">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=waim.mabda.2006@gmail.com&su=Contact%20from%20Portfolio&body=Hello%20Wiam" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="tel:+212704716828" title="Phone"><i class="fa-solid fa-phone"></i></a>
+      <a href="https://gitlab.com/wiammabda06" target="_blank" title="GitLab">
+  <i class="fa-brands fa-gitlab"></i>
+</a>
+      <a href="https://www.linkedin.com/in/waim-mabda-4aa147352/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
